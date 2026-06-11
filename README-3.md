@@ -1,11 +1,11 @@
-# ⚡ Electricity Demand Forecasting using LSTM
+#  Electricity Demand Forecasting using LSTM
 
 A beginner-friendly time-series forecasting project built with LSTM (Keras/TensorFlow).
 Predicts next-day and next-week electricity demand using historical usage, temperature, and time features.
 
 ---
 
-## 📸 Project Preview
+##  Project Preview
 
 ```
 Raw Data → Preprocessing → Normalization → Sequences → LSTM Model → Predictions → Visualization
@@ -13,7 +13,7 @@ Raw Data → Preprocessing → Normalization → Sequences → LSTM Model → Pr
 
 ---
 
-## 🧠 What is this project?
+##  What is this project?
 
 This project uses an **LSTM (Long Short-Term Memory)** neural network to forecast electricity demand.
 LSTM is a type of RNN that can learn patterns in sequential/time-series data by "remembering" past values.
@@ -22,17 +22,17 @@ Given the past 24 hours of data (temperature, hour of day, day of week, demand),
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-📦 electricity-demand-forecasting-lstm
- ┣ 📓 electricity_demand_forecasting_lstm.ipynb   ← Main Colab notebook
- ┗ 📄 README.md                                   ← You are here
+ electricity-demand-forecasting-lstm
+ ┣  electricity_demand_forecasting_lstm.ipynb   ← Main Colab notebook
+ ┗  README.md                                   ← You are here
 ```
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -43,11 +43,11 @@ Given the past 24 hours of data (temperature, hour of day, day of week, demand),
 | Scikit-learn | MinMaxScaler for normalization |
 | Matplotlib | Plotting actual vs predicted values |
 
-> ✅ All libraries come **pre-installed** in Google Colab — no setup needed.
+>  All libraries come **pre-installed** in Google Colab — no setup needed.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 A **synthetic dataset** is generated inside the notebook simulating 2 years of realistic hourly electricity data:
 
@@ -60,14 +60,14 @@ A **synthetic dataset** is generated inside the notebook simulating 2 years of r
 | `demand_mw` | Electricity demand in Megawatts |
 
 **Patterns baked in:**
-- 📈 Daily peaks at morning & evening
-- 📉 Lower demand on weekends
-- 🌡️ Higher demand in summer (cooling) and winter (heating)
-- 🔀 Random noise for realism
+-  Daily peaks at morning & evening
+-  Lower demand on weekends
+-  Higher demand in summer (cooling) and winter (heating)
+-  Random noise for realism
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 ```
 Input: (24 time steps × 4 features)
@@ -87,14 +87,14 @@ Input: (24 time steps × 4 features)
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option 1 — Google Colab (Recommended)
 1. Go to [colab.research.google.com](https://colab.research.google.com)
 2. Click **File → Upload notebook**
 3. Upload `electricity_demand_forecasting_lstm.ipynb`
 4. Click **Runtime → Run all** (`Ctrl + F9`)
-5. Done — results appear in ~2–3 minutes ⚡
+5. Done — results appear in ~2–3 minutes 
 
 ### Option 2 — Local (Jupyter)
 ```bash
@@ -104,15 +104,15 @@ jupyter notebook electricity_demand_forecasting_lstm.ipynb
 
 ---
 
-## 📈 Results
+##  Results
 
 The notebook produces the following outputs:
 
-- ✅ **Training loss curve** — training vs validation loss per epoch
-- ✅ **Actual vs Predicted plot** — full 30-day test period + zoomed 7-day view
-- ✅ **Scatter plot** — predicted vs actual (closer to diagonal = better)
-- ✅ **24-hour forecast** — next day demand with recent context
-- ✅ **7-day forecast** — full next-week demand projection
+-  **Training loss curve** — training vs validation loss per epoch
+-  **Actual vs Predicted plot** — full 30-day test period + zoomed 7-day view
+-  **Scatter plot** — predicted vs actual (closer to diagonal = better)
+-  **24-hour forecast** — next day demand with recent context
+-  **7-day forecast** — full next-week demand projection
 
 **Evaluation Metrics:**
 | Metric | Meaning |
@@ -123,7 +123,7 @@ The notebook produces the following outputs:
 
 ---
 
-## 🎤 Interview Cheatsheet
+##  Interview Cheatsheet
 
 **Q: Why LSTM for time-series?**
 > LSTM has a memory (cell state) that retains patterns over long sequences — unlike plain neural nets that forget earlier inputs.
@@ -142,7 +142,7 @@ The notebook produces the following outputs:
 
 ---
 
-## 🔮 Possible Improvements
+##  Possible Improvements
 
 - [ ] Use real-world dataset (e.g. UCI Electricity, Kaggle Energy datasets)
 - [ ] Add holiday / weekend flags as features
@@ -153,14 +153,10 @@ The notebook produces the following outputs:
 
 ---
 
-## 👤 Author
-
-Built as a **resume project** to demonstrate time-series forecasting with deep learning.
-
 > *Clean LSTM pipeline: preprocessing → training → evaluation → forecasting → visualization*
 
 ---
 
-## 📄 License
+##  License
 
 This project is open-source and free to use for learning and portfolio purposes.
